@@ -74,7 +74,7 @@ In general, the sections should be in this order. However, if the Methods are no
 
 The presentation should be 35 minutes long, including questions.
 
-As with the Biological Target Presentation, you should prepare a series of slides to accompany your presentation. Data and figures that you did not generate should be properly cited. Citations should be numbered/named on individual slides and an [ACS-style bibliography](https://pubs.acs.org/doi/full/10.1021/acsguide.40303) included at the end of the slide slow. The slide show should be in Apple Keynote (.key), Microsoft Powerpoint (.ppt/,pptx), or Portable Document Format (.pdf) format. Before the first team presents, your slides be submitted to Canvas. To expedite transitions between presentations, students will all present using a provided laptop and on Zoom.
+As with the Biological Target Presentation, you should prepare a series of slides to accompany your presentation. Data and figures that you did not generate should be properly cited. Citations should be numbered/named on individual slides and an [ACS-style bibliography](https://pubs.acs.org/doi/full/10.1021/acsguide.40303) included at the end of the slide slow. The slide show should be in Apple Keynote (.key), Microsoft Powerpoint (.ppt/.pptx), or Portable Document Format (.pdf) format. Before the first team presents, your slides be submitted to Canvas. To expedite transitions between presentations, students will all present using a provided laptop and on Zoom.
 
 A presentation that enables the team to pass the class will
 * address all of the questions with sufficient evidence for the answers,

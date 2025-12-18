@@ -17,7 +17,7 @@ Instead of a traditional point-based system, we will use specifications grading.
 | Participation | 4 | 6 | 8 | 10 |
 | <i>Team</i>
 | Final presentation | Complete | Complete | Clear scientific contribution | Conference quality |
-| Final report | Complete | Complete | Journal quality with major revisions | Journal quality with minor revisions |
+| Final report | Complete | Complete | UG research journal quality, with major revisions | UG research journal quality, with minor revisions |
 
 In addition to meeting specifications described in the rubrics, all satisfactory reports will be presented logically and use proper English grammar. The main text should be double-spaced in Times New Roman size 12 font on regular letter paper size with 1-inch margin on all sides. Your name and the document title should be on the top of the first page. Figures, tables, captions, and references do not count towards the page limit and should be included after the main text.
 
