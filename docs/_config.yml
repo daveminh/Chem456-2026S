@@ -2,14 +2,13 @@
 title: Illinois Institute of Technology
 course_name: Chem 456 - Computational Biochemistry and Drug Design
 course_description: "A project-based introduction to computer-aided drug design tools and the principles behind them. Structural alignment and homology modeling. Molecular docking and molecular mechanics force fields for binding enthalpies. Continuum dielectric models of electrostatics and solvation. The Boltzmann distribution and alchemical binding free energy calculations. Quantitative structure property relationships. Business, legal, and ethical considerations of drug development."
-course_semester: "Fall 2024"
+course_semester: "Spring 2026"
 description: |
     Instructor: David Minh
 
-# message: Register to our Google <a href="https://groups.google.com/forum/#!forum/gp-id">groups page</a> to get course notifications via email.
-baseurl: "/Chem456-2024F" # the subpath of your site, e.g. /blog
+baseurl: "/Chem456-2026S" # the subpath of your site, e.g. /blog
 url: "http://daveminh.github.io/" # the base hostname & protocol for your site
-githubdir: "daveminh/Chem456-2024F"
+githubdir: "daveminh/Chem456-2026S"
 
 # Author/user information
 email: david.minh@iit.edu

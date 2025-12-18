@@ -13,7 +13,7 @@ Instead of a traditional point-based system, we will use specifications grading.
 | Biological target report |  |  | X | X |
 | Individual contribution to final project	| Minor contribution, no report	| Minor contribution | Major contribution  |  Vital contribution |
 | Quizzes | 1 | 2 | 2 | 3  |
-| Exercises | 5 | 6 | 7 | 8 |
+| Exercises | 7 | 8 | 9 | 10 |
 | Participation | 4 | 6 | 8 | 10 |
 | <i>Team</i>
 | Final presentation | Complete | Complete | Clear scientific contribution | Conference quality |
@@ -21,23 +21,23 @@ Instead of a traditional point-based system, we will use specifications grading.
 
 In addition to meeting specifications described in the rubrics, all satisfactory reports will be presented logically and use proper English grammar. The main text should be double-spaced in Times New Roman size 12 font on regular letter paper size with 1-inch margin on all sides. Your name and the document title should be on the top of the first page. Figures, tables, captions, and references do not count towards the page limit and should be included after the main text.
 
-For the biological target presentation and report, you will select and do some research on a biological macromolecule to evaluate its suitability for computer-aided drug design.
+For the biological target presentation and report, you will select and do some research on a G protein-coupled receptor (or by permission, another biological macromolecule) to evaluate its suitability for computer-aided drug design.
 
-A significant part of the class will be based on a final project completed in a group of 3 or 4 students. In the last week of class, your group will give a 25-30 minute presentation about your project. You will also write a final report in the format of a scientific journal article. It should be at least 5 pages.
+A significant part of the class will be based on a final project completed in a group of up to 4 students. During finals week, your group will give a 35 minute presentation about your project. You will also write a final report in the format of a scientific journal article. It should be at least 5 pages.
 
 You will also write an individual contribution report describing how you contributed to the team project. It should be at least 1 page. This report will be reviewed by your teammates for credibility. The report and peer review will be used to classify your level of individual contribution.
 
-Quizzes will be during the first 30 minutes of class. A satisfactory grade is 75%.
+Quizzes will be during the first 30 minutes of class. A satisfactory grade is 70%.
 
-Exercises will be due a week after the class session in which they are introduced. Exercises should be completely correct. A satisfactory grade will be based on correct answers for a subset of questions, which may or may not be announced beforehand.
+Unless otherwise stated, exercises will be due a week after the class session in which they are introduced. Exercises should be completely correct. A satisfactory grade will be based on correct answers for a subset of questions, which may or may not be announced beforehand.
 
-Participation points will be awarded for asking questions during presentations (1 point each and up to 2 per day) as well as summarizing your contributions. I will also award participation points during classes for answering my questions, helping a classmate with their questions, or doing well in a kahoot! quiz.
+Participation points will be awarded for asking questions during presentations (1 point each and up to 2 per day) as well as summarizing your contributions. I will also award participation points during classes for answering my questions or helping a classmate with their questions.
 
 ## Tokens
 
-At the beginning of class, you will have 5 tokens.
+At the beginning of class, you will have 8 tokens.
 
-Tokens may be used to revise an unsatisfactory assignment, submit an assignment late, or for participation points. Costs depend on the assignment. The exercises cost 1 token to revise and 1 token to submit up to one week late. The biological target presentation, report, and quizzes cost 2 tokens to revise. The report costs 1 token to submit up to one week late. Revising the presentation means giving me at least a partial presentation.
+Tokens may be used to revise an unsatisfactory assignment, submit an assignment late, or for participation points. Costs depend on the assignment. The exercises cost 1 token to revise and 1 token to submit up to one week late. The biological target presentation, report, and quizzes cost 2 tokens to revise. The report costs 1 token to submit up to one week late. Revising the presentation means giving me at least a partial presentation. A token is worth 2 participation points.
 
 Revising a quiz means writing satisfactory new questions and answers comparable to the questions that you missed and letting me use them in the future. Each question should be:
 * similar to a question that you answer correctly.

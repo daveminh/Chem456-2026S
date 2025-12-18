@@ -1,189 +1,209 @@
 - day: M
-  date: 8/19
-  title: "No class - Dr. Minh conference travel"
+  date: 01/12
+  title: "Introduction and syllabus. Basic Linux and remote computing."
+  description: "Logging in. Terminal. Linux commands. Paths. Environments. GitHub
+    and Git."
+  basename_todo: 01-12-Introduction
 
 - day: W
-  date: 8/21
-  title: "No class - Dr. Minh conference travel"
+  date: 01/14
+  exercise: "1: Introduction to Jupyter notebooks"
+  notebook_todo: 01-Jupyter
 
 - day: M
-  date: 8/26
-  title: "Introduction and syllabus"
-  exercise: "1: Introduction to Google Colab"
-  notebook: 01-Google_Colab
-  basename: "08-26-Introduction"
+  date: 01/19
+  title: "No class - MLK Day"
 
 - day: W
-  date: 8/28
-  title: "Fundamentals of biological macromolecules"
+  date: 01/21
+  title: "Fundamentals of biological macromolecules."
   exercise: "2: Structural visualization with py3DMol"
-  notebook: "02-Structural_Visualization"
-  basename: "08-28-Biological_Macromolecules"
+  notebook_todo: 02-Structural_Visualization
+  basename_todo: 01-21-Biological_Macromolecules
+  due: "Exercise 1"
 
-- day: W
-  date: 8/28 lunch
+- day: F
+  date: 01/23
   title: "Structure determination"
-  description: "by X-ray crystallography, NMR, and CryoEM"
-  basename: "08-28-Structure_Determination"
+  description: "by X-ray crystallography, NMR, and CryoEM."
+  basename_todo: 01-23-Structure_Determination
 
 - day: M
-  date: 9/2
-  title: "No class - Labor Day"
-
-- day: W
-  date: 9/4
-  title: "Structure prediction principles"
+  date: 01/26
+  title: "Structure prediction."
+  description: "Homology modeling. AlphaFold and RoseTTAFold"
   exercise: "3: Homology modeling"
-  notebook: 03-Homology_Modeling
-  basename: "09-04-Structure_Prediction"
-  due: "Exercise 1. Exercise 2"
-
-- day: M
-  date: 9/9
-  title: "Examples of molecular modeling projects"
-  basename_todo: "09-09"
+  notebook_todo: 03-Homology_Modeling
+  basename_todo: 01-26-Structure_Prediction
 
 - day: W
-  date: 9/11
+  date: 01/28
   title: "Selecting a target"
   description: "for structure-based molecular design. Scientific and market considerations"
-  basename: "09-11-Target_Selection"
-  due: "Exercise 3"
+  basename_todo: 01-28-Target_Selection
+  due: "Exercise 2"
 
 - day: M
-  date: 9/16
-  title: "Scientific Literature"
-  description: "Academic literature databases. Reference management with Zotero"
-  basename: "09-16-Scientific_Literature"
-  due: "Quiz: Biomolecular structure"
+  date: 02/02
+  title: "G protein-coupled receptors."
+  description: "Molecular pharmacology. Levels of efficacy. Binding and functional selectivity."
 
 - day: W
-  date: 9/18
+  date: 02/04
+  title: "Scientific literature and databases."
+  description: "Academic literature databases. Reference management with Zotero.
+    PubChem, PDB, UniProt, and GPCRdb."
+  basename_todo: 02-04-Scientific_Resources
+  due: "Exercise 3. Quiz: Biomolecular structure"
+
+- day: M
+  date: 02/09
   title: "Electrostatics and solvation"
-  description: "of biological macromolecules"
-  basename: "09-18-Electrostatics"
-
-- day: M
-  date: 9/23
-  exercise: "4: Visualizing protonation and electrostatics"
-  notebook: 04-Electrostatics
+  description: "of biological macromolecules."
+  basename_todo: 02-09-Electrostatics
 
 - day: W
-  date: 9/25
-  title: "Biological target presentations"
+  date: 02/11
+  exercise: "4: Visualizing protonation and electrostatics"
+  notebook_todo: 04-Electrostatics
+
+- day: M
+  date: 02/16
+  title: "Molecular docking."
+  description: "Scoring functions. Common optimization algorithms."
+  basename_todo: 02-16-Molecular_Docking
+
+- day: W
+  date: 02/18
+  exercise: "5: Molecular docking with AutoDock Vina"
+  notebook_todo: 05-Molecular_Docking
+  due: "Exercise 4. Biological target presentation draft (optional)"
+
+- day: M
+  date: 02/23
+  title: "Biological target presentations."
   due: "Biological target presentations"
 
-- day: M
-  date: 9/30
-  title: "Biological target presentations. Decide project teams"
-  due: "Exercise 4"
-
 - day: W
-  date: 10/2
-  title: "Molecular docking."
-  description: "Scoring functions. Common optimization algorithms"
-  basename: "10-02-Molecular_Docking"
-
-- day: M
-  date: 10/7
-  title: "No class - Fall Break Day"
-
-- day: W
-  date: 10/9
-  exercise: "5: Molecular docking with AutoDock Vina"
-  notebook: 05-Molecular_Docking
-  due: "Biological target report"
-
-- day: M
-  date: 10/14
-  title: "Molecular mechanics force fields."
-  description: "Bonded and nonbonded energy terms. Parameterization"
-  basename: "10-14-Molecular_Mechanics"
-
-- day: W
-  date: 10/16
-  exercise: "6: Preparing a system for molecular simulation"
-  notebook: 06-System_Preparation
+  date: 02/25
+  title: "Biological target presentations. Decide project teams."
   due: "Exercise 5"
 
 - day: M
-  date: 10/21
-  title: "Quantum mechanics/molecular mechanics (QM/MM)"
-  basename: "10-21-QMMM"
-
+  date: 03/02
+  title: "Virtual screening on high performance computing resources."
+  description: "Chemical library preparation. Job submission."
+  exercise: "6: Virtual Screening"
+  notebook_todo: 06-Virtual_Screening
+  due: "Biological target report draft (optional)."
+  
 - day: W
-  date: 10/23
-  exercise: "7: QM/MM analysis of SARS-CoV-2 MPro catalysis"
-  notebook: 07-QMMM
-  due: "Exercise 6"
+  date: 03/04
+  title: "Molecular mechanics force fields."
+  description: "Bonded and nonbonded energy terms. Parameterization."
+  basename_todo: 03-04-Molecular_Mechanics
 
 - day: M
-  date: 10/28
+  date: 03/09
+  exercise: "7: Preparing a system for molecular simulation"
+  notebook_todo: 07-System_Preparation
+  due: "Exercise 6. Biological target report."
+
+- day: W
+  date: 03/11
   title: "Monte Carlo."
   description: "Monte Carlo Integration. Markov chain Monte Carlo"
-  basename: "10-28-Monte_Carlo"
+  basename_todo: 03-11-Monte_Carlo
   due: "Quiz: Potential energy"
 
+- day: M
+  date: 03/16
+  title: "No class - Spring Break"
+
 - day: W
-  date: 10/30
+  date: 03/18
+  title: "No class - Spring Break"
+
+- day: M
+  date: 03/23
   title: "Molecular simulation."
-  description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics. Integrators, thermostats, and barostats. Equilibration."
+  description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics.
+    Integrators, thermostats, and barostats. Equilibration."
   exercise: "8: Performing a molecular simulation with OpenMM"
-  notebook: 08-OpenMM
-  basename: "10-30-Molecular_Simulation"
+  notebook_todo: 08-OpenMM
   due: "Exercise 7"
-
-- day: M
-  date: 11/4
-  title: "High Performance Computing with Bridges2."
-  description: "Logging in. File transfer. Job submission"
-  exercise: "9: Analysis of molecular simulations"
-  notebook: 09-High_Performance_Computing
+  basename_todo: 03-23-Molecular_Simulation
 
 - day: W
-  date: 11/6
+  date: 03/25
   title: "Simulation Analysis."
-  description: "Alignment and visualization of trajectories. Root mean square properties. Estimating expectation values. Dimensionality reduction. Clustering."
-  exercise: "10: Analysis of molecular simulations"
-  notebook: 10-MDAnalysis
-  due: "Exercise 8"
-
+  description: "Alignment and visualization of trajectories. Root mean square properties.
+    Estimating expectation values. Dimensionality reduction. Clustering."
+  exercise: "09: Analysis of molecular simulations"
+  notebook_todo: 09-MDAnalysis  
+  
 - day: M
-  date: 11/11
-  title: "Enhanced sampling."
-  description: "Importance sampling. Thermodynamic processes. Umbrella sampling. Multi-state Analysis."
-  basename: "11-11-Enhanced_Sampling"
-  exercise: "11: Umbrella sampling"
-  notebook: 11-Umbrella
+  date: 03/30
+  title: "Catch up on exercises / work on projects."
+  due: "Exercise 8 (end of class)"
 
 - day: W
-  date: 11/13
-  title: "Free energy calculations."
-  description: "Alchemical methods. Thermodynamic cycles"
-  basename: "11-13-Free_Energy_Calculations"
+  date: 04/01
+  title: "Enhanced sampling."
+  description: "Importance sampling. Thermodynamic processes. Umbrella sampling.
+    Multi-state Analysis."
+  exercise: "10: Umbrella sampling"
+  notebook_todo: 10-Umbrella
+  basename_todo: 03-30-Enhanced_Sampling
   due: "Exercise 9"
 
 - day: M
-  date: 11/18
+  date: 04/06
   title: "Replica Exchange."
-  exercise: "12: Performing replica exchange with Fulton Market"
-  notebook: 12-Fulton_Market
-  basename: "11-18-Replica_Exchange"
+  exercise: "11: Performing replica exchange with Fulton Market"
+  notebook_todo: 11-Fulton_Market
+  basename_todo: 04-06-Replica_Exchange
+
+- day: W
+  date: 04/08
+  title: "Free energy calculations."
+  description: "Thermodynamic cycles. Alchemical methods. End-point methods. Implicit
+    ligand theory."
   due: "Exercise 10"
 
+- day: M
+  date: 04/13
+  due: "Exercise 11"
+  exercise: "12: Free energy calculations with AlGDock"
+  notebook_todo: 12-AlGDock
+
 - day: W
-  date: 11/20
-  title: "Quantitative structure-property relationships. Structural features. Common properties. Machine learning methods"
-  basename: "11-20-QSPR"
-  due: "Exercise 11. Quiz: Molecular simulations"
+  date: 04/15
+  title: "Quantitative structure-property relationships."
+  description: "Structural features. Common properties. Machine learning methods."
+  basename_todo: 04-15-QSPR
+  due: "Quiz: Molecular simulations"
 
 - day: M
-  date: 11/25
-  title: "Solvation energies."
-  exercise: "13: Machine learning prediction of solvation energies"
-  basename: "11-25-Solubility"
-  notebook: 13-QSPR
+  date: 04/20
+  title: "Solubility."
+  exercise: "13: Machine learning prediction of solubility"
+  basename_todo: 04-20-Solubility
+  notebook_todo: 13-Solubility
+  due: "Exercise 12"
 
 - day: W
-  date: 11/27
-  title: "No class - Thanksgiving Break"
+  date: 04/22
+  title: "Quantum mechanics/molecular mechanics (QM/MM)"
+  basename_todo: 04-22-QMMM
+
+- day: M
+  date: 04/27
+  exercise: "14: QM/MM analysis of SARS-CoV-2 MPro catalysis"
+  notebook_todo: 04-QMMM
+  due: "Exercise 13"
+
+- day: W
+  date: 04/29
+  title: "Catch up on exercises / work on projects."
+  due: "Final presentation draft (optional)"
