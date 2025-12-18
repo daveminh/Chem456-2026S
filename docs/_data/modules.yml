@@ -1,0 +1,189 @@
+- day: M
+  date: 8/19
+  title: "No class - Dr. Minh conference travel"
+
+- day: W
+  date: 8/21
+  title: "No class - Dr. Minh conference travel"
+
+- day: M
+  date: 8/26
+  title: "Introduction and syllabus"
+  exercise: "1: Introduction to Google Colab"
+  notebook: 01-Google_Colab
+  basename: "08-26-Introduction"
+
+- day: W
+  date: 8/28
+  title: "Fundamentals of biological macromolecules"
+  exercise: "2: Structural visualization with py3DMol"
+  notebook: "02-Structural_Visualization"
+  basename: "08-28-Biological_Macromolecules"
+
+- day: W
+  date: 8/28 lunch
+  title: "Structure determination"
+  description: "by X-ray crystallography, NMR, and CryoEM"
+  basename: "08-28-Structure_Determination"
+
+- day: M
+  date: 9/2
+  title: "No class - Labor Day"
+
+- day: W
+  date: 9/4
+  title: "Structure prediction principles"
+  exercise: "3: Homology modeling"
+  notebook: 03-Homology_Modeling
+  basename: "09-04-Structure_Prediction"
+  due: "Exercise 1. Exercise 2"
+
+- day: M
+  date: 9/9
+  title: "Examples of molecular modeling projects"
+  basename_todo: "09-09"
+
+- day: W
+  date: 9/11
+  title: "Selecting a target"
+  description: "for structure-based molecular design. Scientific and market considerations"
+  basename: "09-11-Target_Selection"
+  due: "Exercise 3"
+
+- day: M
+  date: 9/16
+  title: "Scientific Literature"
+  description: "Academic literature databases. Reference management with Zotero"
+  basename: "09-16-Scientific_Literature"
+  due: "Quiz: Biomolecular structure"
+
+- day: W
+  date: 9/18
+  title: "Electrostatics and solvation"
+  description: "of biological macromolecules"
+  basename: "09-18-Electrostatics"
+
+- day: M
+  date: 9/23
+  exercise: "4: Visualizing protonation and electrostatics"
+  notebook: 04-Electrostatics
+
+- day: W
+  date: 9/25
+  title: "Biological target presentations"
+  due: "Biological target presentations"
+
+- day: M
+  date: 9/30
+  title: "Biological target presentations. Decide project teams"
+  due: "Exercise 4"
+
+- day: W
+  date: 10/2
+  title: "Molecular docking."
+  description: "Scoring functions. Common optimization algorithms"
+  basename: "10-02-Molecular_Docking"
+
+- day: M
+  date: 10/7
+  title: "No class - Fall Break Day"
+
+- day: W
+  date: 10/9
+  exercise: "5: Molecular docking with AutoDock Vina"
+  notebook: 05-Molecular_Docking
+  due: "Biological target report"
+
+- day: M
+  date: 10/14
+  title: "Molecular mechanics force fields."
+  description: "Bonded and nonbonded energy terms. Parameterization"
+  basename: "10-14-Molecular_Mechanics"
+
+- day: W
+  date: 10/16
+  exercise: "6: Preparing a system for molecular simulation"
+  notebook: 06-System_Preparation
+  due: "Exercise 5"
+
+- day: M
+  date: 10/21
+  title: "Quantum mechanics/molecular mechanics (QM/MM)"
+  basename: "10-21-QMMM"
+
+- day: W
+  date: 10/23
+  exercise: "7: QM/MM analysis of SARS-CoV-2 MPro catalysis"
+  notebook: 07-QMMM
+  due: "Exercise 6"
+
+- day: M
+  date: 10/28
+  title: "Monte Carlo."
+  description: "Monte Carlo Integration. Markov chain Monte Carlo"
+  basename: "10-28-Monte_Carlo"
+  due: "Quiz: Potential energy"
+
+- day: W
+  date: 10/30
+  title: "Molecular simulation."
+  description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics. Integrators, thermostats, and barostats. Equilibration."
+  exercise: "8: Performing a molecular simulation with OpenMM"
+  notebook: 08-OpenMM
+  basename: "10-30-Molecular_Simulation"
+  due: "Exercise 7"
+
+- day: M
+  date: 11/4
+  title: "High Performance Computing with Bridges2."
+  description: "Logging in. File transfer. Job submission"
+  exercise: "9: Analysis of molecular simulations"
+  notebook: 09-High_Performance_Computing
+
+- day: W
+  date: 11/6
+  title: "Simulation Analysis."
+  description: "Alignment and visualization of trajectories. Root mean square properties. Estimating expectation values. Dimensionality reduction. Clustering."
+  exercise: "10: Analysis of molecular simulations"
+  notebook: 10-MDAnalysis
+  due: "Exercise 8"
+
+- day: M
+  date: 11/11
+  title: "Enhanced sampling."
+  description: "Importance sampling. Thermodynamic processes. Umbrella sampling. Multi-state Analysis."
+  basename: "11-11-Enhanced_Sampling"
+  exercise: "11: Umbrella sampling"
+  notebook: 11-Umbrella
+
+- day: W
+  date: 11/13
+  title: "Free energy calculations."
+  description: "Alchemical methods. Thermodynamic cycles"
+  basename: "11-13-Free_Energy_Calculations"
+  due: "Exercise 9"
+
+- day: M
+  date: 11/18
+  title: "Replica Exchange."
+  exercise: "12: Performing replica exchange with Fulton Market"
+  notebook: 12-Fulton_Market
+  basename: "11-18-Replica_Exchange"
+  due: "Exercise 10"
+
+- day: W
+  date: 11/20
+  title: "Quantitative structure-property relationships. Structural features. Common properties. Machine learning methods"
+  basename: "11-20-QSPR"
+  due: "Exercise 11. Quiz: Molecular simulations"
+
+- day: M
+  date: 11/25
+  title: "Solvation energies."
+  exercise: "13: Machine learning prediction of solvation energies"
+  basename: "11-25-Solubility"
+  notebook: 13-QSPR
+
+- day: W
+  date: 11/27
+  title: "No class - Thanksgiving Break"
