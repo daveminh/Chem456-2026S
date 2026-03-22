@@ -117,7 +117,7 @@
   date: 03/11
   exercise: "7: Preparing a system for molecular simulation"
   notebook: 07-System_Preparation
-  due: "Quiz: Potential energy. Exercise 6."
+  due: "Exercise 6."
 
 - day: M
   date: 03/16
@@ -129,43 +129,44 @@
 
 - day: M
   date: 03/23
-  title: "Molecular simulation."
-  description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics.
-    Integrators, thermostats, and barostats. Equilibration."
-  exercise: "8: Performing a molecular simulation with OpenMM"
-  notebook_todo: 08-OpenMM
-  due: "Exercise 7"
-  slides_todo: 03-23-Molecular_Simulation
+  title: "Catch up on exercises / work on projects."
+  due: "Quiz: Potential energy."
 
 - day: W
   date: 03/25
-  title: "Simulation Analysis."
-  description: "Alignment and visualization of trajectories. Root mean square properties.
-    Estimating expectation values. Dimensionality reduction. Clustering."
-  exercise: "09: Analysis of molecular simulations"
-  notebook_todo: 09-MDAnalysis  
+  title: "Molecular simulation."
+  description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics.
+    Integrators, thermostats, and barostats. Equilibration. Visualization of trajectories."
+  exercise: "8: Performing a molecular simulation with OpenMM"
+  notebook_todo: 08-Molecular_Dynamics
+  due: "Exercise 7"
+  slides: 0325-Molecular_Simulation
   
 - day: M
   date: 03/30
-  title: "Catch up on exercises / work on projects."
-  due: "Exercise 8 (end of class)"
-
-- day: W
-  date: 04/01
   title: "Enhanced sampling."
   description: "Importance sampling. Thermodynamic processes. Umbrella sampling.
     Multi-state Analysis."
-  exercise: "10: Umbrella sampling"
-  notebook_todo: 10-Umbrella
+  exercise: "9: Umbrella sampling"
+  notebook_todo: 09-Umbrella
   slides_todo: 03-30-Enhanced_Sampling
-  due: "Exercise 9"
+
+- day: W
+  date: 04/01
+  title: "Replica Exchange"
+  exercise: "10: Performing replica exchange with Fulton Market"
+  notebook_todo: 10-Replica_Exchange
+  slides_todo: 04-06-Replica_Exchange
+  due: "Exercise 8"
 
 - day: M
   date: 04/06
-  title: "Replica Exchange."
-  exercise: "11: Performing replica exchange with Fulton Market"
-  notebook_todo: 11-Fulton_Market
-  slides_todo: 04-06-Replica_Exchange
+  title: "Statistical analysis of molecular simulations."
+  description: "Estimating expectation values. Contact analysis. Dimensionality reduction. Clustering."
+  exercise: "11: Statistical analysis of molecular simulations"
+  notebook_todo: 11-Analysis
+  slides_todo: 04-01-Statistical_Analysis
+  due: "Exercise 9"
 
 - day: W
   date: 04/08
