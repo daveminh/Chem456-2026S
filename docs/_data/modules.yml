@@ -137,8 +137,8 @@
   title: "Molecular simulation."
   description: "Metropolis Monte Carlo. Molecular dynamics. Constrained dynamics.
     Integrators, thermostats, and barostats. Equilibration. Visualization of trajectories."
-  exercise: "8: Performing a molecular simulation with OpenMM"
-  notebook_todo: 08-Molecular_Dynamics
+  exercise: "8: Performing a molecular simulation"
+  notebook: 08-Molecular_Dynamics
   due: "Exercise 7"
   slides: 0325-Molecular_Simulation
   
