@@ -1,4 +1,4 @@
-# Exercise 0: Basic Linux + Treasure Hunt
+# Basic Linux + Treasure Hunt
 
 > **Audience:** Classroom beginners + HPC onboarding (SDSC Expanse)  
 > **Goal:** Build confidence in the terminal: create files/directories, navigate with `cd`, use **absolute** & **relative** paths, and edit text with **nano**.
