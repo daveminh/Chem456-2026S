@@ -148,15 +148,15 @@
   description: "Importance sampling. Thermodynamic processes. Umbrella sampling.
     Multi-state Analysis."
   exercise: "9: Umbrella sampling"
-  notebook_todo: 09-Umbrella
-  slides_todo: 03-30-Enhanced_Sampling
+  notebook: 09-Umbrella
+  slides: 0330-Enhanced_Sampling
 
 - day: W
   date: 04/01
   title: "Replica Exchange"
   exercise: "10: Performing replica exchange with Fulton Market"
   notebook_todo: 10-Replica_Exchange
-  slides_todo: 04-06-Replica_Exchange
+  slides_todo: 0401-Replica_Exchange
   due: "Exercise 8"
 
 - day: M
@@ -165,7 +165,7 @@
   description: "Estimating expectation values. Contact analysis. Dimensionality reduction. Clustering."
   exercise: "11: Statistical analysis of molecular simulations"
   notebook_todo: 11-Analysis
-  slides_todo: 04-01-Statistical_Analysis
+  slides_todo: 0406-Statistical_Analysis
   due: "Exercise 9"
 
 - day: W
