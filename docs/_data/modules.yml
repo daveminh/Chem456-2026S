@@ -155,8 +155,8 @@
   date: 04/01
   title: "Replica Exchange"
   exercise: "10: Performing replica exchange with Fulton Market"
-  notebook_todo: 10-Replica_Exchange
-  slides_todo: 0401-Replica_Exchange
+  notebook: 10-Parallel_Tempering
+  slides: 0401-Replica_Exchange
   due: "Exercise 8"
 
 - day: M
