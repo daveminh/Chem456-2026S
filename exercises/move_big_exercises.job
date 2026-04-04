@@ -1,0 +1,62 @@
+#!/bin/bash
+#SBATCH --account=iit130
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=1G
+#SBATCH --time=01:00:00
+#SBATCH --job-name=move_big_exercises
+#SBATCH --output=move_big_exercises.%j.out
+#SBATCH --error=move_big_exercises.%j.err
+
+# We previously stored exercise data in $HOME, but this can fill the disk quota.
+# Lustre project storage is a better place for exercises with a lot of data.
+# This job script moves large exercise directories (08 and 10) from $HOME to 
+# Lustre project storage and replaces them with symbolic links.
+# Note that you cannot run other jobs that use Exercises 08 and 10 until this move is complete.
+# 
+# To download this job script, run the following commands in your terminal:
+# cd /expanse/lustre/projects/iit130/$USER
+# curl -L -o move_big_exercises.job https://raw.githubusercontent.com/daveminh/Chem456-2026S/refs/heads/main/exercises/move_big_exercises.job
+#
+# To submit this job, run:
+# sbatch move_big_exercises.job
+#
+
+set -euo pipefail
+
+echo "Starting move_big_exercises at $(date)"
+echo "Running on node: $HOSTNAME"
+
+PROJECT_EX=/expanse/lustre/projects/iit130/$USER/exercises
+HOME_EX=$HOME/exercises
+
+mkdir -p "$PROJECT_EX"
+
+for EX in 08 10; do
+    SRC="$HOME_EX/$EX"
+    DEST="$PROJECT_EX/$EX"
+
+    if [ ! -d "$SRC" ]; then
+        echo "Skipping Exercise $EX: $SRC does not exist."
+        continue
+    fi
+
+    if [ -L "$SRC" ]; then
+        echo "Skipping Exercise $EX: already a symbolic link."
+        continue
+    fi
+
+    echo "Moving Exercise $EX to Lustre..."
+    mv "$SRC" "$DEST"
+
+    echo "Creating symbolic link for Exercise $EX..."
+    ln -s "$DEST" "$SRC"
+done
+
+echo
+echo "✅ Done."
+echo "Exercises 08 and 10 now live on Lustre, with symlinks in \$HOME."
+echo "Completed at $(date)"
+``
