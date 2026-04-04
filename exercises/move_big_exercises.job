@@ -5,7 +5,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
-#SBATCH --time=01:00:00
+#SBATCH --time=02:00:00
 #SBATCH --job-name=move_big_exercises
 #SBATCH --output=move_big_exercises.%j.out
 #SBATCH --error=move_big_exercises.%j.err
@@ -29,8 +29,8 @@ set -euo pipefail
 echo "Starting move_big_exercises at $(date)"
 echo "Running on node: $HOSTNAME"
 
-PROJECT_EX=/expanse/lustre/projects/iit130/$USER/exercises
 HOME_EX=$HOME/exercises
+PROJECT_EX=/expanse/lustre/projects/iit130/$USER/exercises
 
 mkdir -p "$PROJECT_EX"
 
@@ -44,12 +44,15 @@ for EX in 08 10; do
     fi
 
     if [ -L "$SRC" ]; then
-        echo "Skipping Exercise $EX: already a symbolic link."
+        echo "Skipping Exercise $EX: already a symlink."
         continue
     fi
 
-    echo "Moving Exercise $EX to Lustre..."
-    mv "$SRC" "$DEST"
+    echo "Syncing Exercise $EX to Lustre..."
+    rsync -a --no-owner --no-group "$SRC/" "$DEST/"
+
+    echo "Removing Exercise $EX from HOME..."
+    rm -rf "$SRC"
 
     echo "Creating symbolic link for Exercise $EX..."
     ln -s "$DEST" "$SRC"
@@ -57,6 +60,5 @@ done
 
 echo
 echo "✅ Done."
-echo "Exercises 08 and 10 now live on Lustre, with symlinks in \$HOME."
+echo "Exercises 08 and 10 now live on Lustre with symlinks in \$HOME."
 echo "Completed at $(date)"
-``
