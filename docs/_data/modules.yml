@@ -165,7 +165,6 @@
   description: "Estimating expectation values. Contact analysis. Dimensionality reduction. Clustering."
   exercise: "11: Statistical analysis of molecular simulations"
   notebook_todo: 11-Analysis
-  slides_todo: 0406-Statistical_Analysis
   due: "Exercise 9"
 
 - day: W
@@ -173,6 +172,7 @@
   title: "Free energy calculations."
   description: "Thermodynamic cycles. Alchemical methods. End-point methods. Implicit
     ligand theory."
+  slides: 0408-Free_Energy_Calculations
   due: "Exercise 10"
 
 - day: M
