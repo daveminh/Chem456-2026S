@@ -1,0 +1,56 @@
+#!/bin/bash
+#SBATCH --account=iit130
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=1G
+#SBATCH --time=04:00:00
+#SBATCH --job-name=move_miniconda
+#SBATCH --output=move_miniconda.%j.out
+#SBATCH --error=move_miniconda.%j.err
+
+# We previously created Conda environments in $HOME, but this can contribute to
+# disk quota errors. Lustre project storage is a better place for Conda. 
+# This job script moves the miniconda3 directory from $HOME to the project directory.
+# Note that you cannot run other jobs that use Conda until this move is complete.
+# 
+# To download this job script, run the following commands in your terminal:
+# cd ~/exercises
+# curl -L -o move_miniconda.job https://raw.githubusercontent.com/daveminh/Chem456-2026S/refs/heads/main/exercises/move_miniconda.job
+#
+# To submit this job, run:
+# sbatch move_miniconda.job
+#
+
+echo "Starting miniconda3 move at $(date)"
+echo "Running on node: $HOSTNAME"
+
+PROJECT_DIR=/expanse/lustre/projects/iit130/$USER
+SRC=$HOME/miniconda3
+DEST=$PROJECT_DIR/miniconda3
+
+mkdir -p $PROJECT_DIR
+
+if [ ! -d "$SRC" ]; then
+    echo "ERROR: $SRC does not exist. Nothing to move."
+    exit 1
+fi
+
+echo "Syncing miniconda3 to Lustre..."
+rsync -a --no-owner --no-group --delete \
+  $SRC/ \
+  $DEST/
+
+echo "Removing miniconda3 from HOME..."
+rm -rf $SRC
+
+echo "Creating symlink..."
+ln -s $DEST $HOME/miniconda3
+
+echo "Testing miniconda..."
+source $HOME/miniconda3/etc/profile.d/conda.sh
+conda info --base
+conda env list
+
+echo "Move completed at $(date)"
