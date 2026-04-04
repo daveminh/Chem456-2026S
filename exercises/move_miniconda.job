@@ -16,21 +16,24 @@
 # Note that you cannot run other jobs that use Conda until this move is complete.
 # 
 # To download this job script, run the following commands in your terminal:
-# cd ~/exercises
+# cd /expanse/lustre/projects/iit130/$USER
 # curl -L -o move_miniconda.job https://raw.githubusercontent.com/daveminh/Chem456-2026S/refs/heads/main/exercises/move_miniconda.job
 #
 # To submit this job, run:
 # sbatch move_miniconda.job
 #
 
+set -euo pipefail
+
 echo "Starting miniconda3 move at $(date)"
 echo "Running on node: $HOSTNAME"
 
 PROJECT_DIR=/expanse/lustre/projects/iit130/$USER
 SRC=$HOME/miniconda3
+STAGING=$HOME/miniconda3.staging
 DEST=$PROJECT_DIR/miniconda3
 
-mkdir -p $PROJECT_DIR
+mkdir -p "$PROJECT_DIR"
 
 if [ ! -d "$SRC" ]; then
     echo "ERROR: $SRC does not exist. Nothing to move."
@@ -38,19 +41,28 @@ if [ ! -d "$SRC" ]; then
 fi
 
 echo "Syncing miniconda3 to Lustre..."
-rsync -a --no-owner --no-group --delete \
-  $SRC/ \
-  $DEST/
+rsync -a --no-owner --no-group \
+  "$SRC/" \
+  "$DEST/"
 
-echo "Removing miniconda3 from HOME..."
-rm -rf $SRC
+echo "Staging original miniconda3 directory..."
+mv "$SRC" "$STAGING"
 
 echo "Creating symlink..."
-ln -s $DEST $HOME/miniconda3
+ln -s "$DEST" "$SRC"
 
 echo "Testing miniconda..."
-source $HOME/miniconda3/etc/profile.d/conda.sh
+source "$SRC/etc/profile.d/conda.sh"
 conda info --base
 conda env list
 
+echo
+echo
 echo "Move completed at $(date)"
+echo
+echo "The original miniconda3 directory has been preserved at:"
+echo "  $STAGING"
+echo
+echo "If everything looks good, you can now delete it with:"
+echo "  srun --account=iit130 --partition=shared --nodes=1 --ntasks=1 --cpus-per-task=1 \
+     --mem=1G --time=01:00:00 rm -rf ~/miniconda3.staging"
