@@ -57,6 +57,37 @@ conda info --base
 conda env list
 
 echo
+echo "Re-registering Jupyter kernels for Conda environments..."
+
+# Load conda from the new location (via symlink)
+source "$HOME/miniconda3/etc/profile.d/conda.sh"
+
+# Get Conda environment names (skip header lines)
+ENV_NAMES=$(conda env list | awk 'NR>2 {print $1}')
+
+for ENV in $ENV_NAMES; do
+    echo
+    echo "Processing environment: $ENV"
+    conda activate "$ENV"
+
+    # Check whether ipykernel is installed
+    if python - <<'EOF' >/dev/null 2>&1
+import ipykernel
+EOF
+    then
+        python -m ipykernel install --user \
+            --name "$ENV" \
+            --display-name "Python ($ENV)"
+        echo "  ✅ Kernel registered: Python ($ENV)"
+    else
+        echo "  ⚠️  Skipping $ENV (ipykernel not installed)"
+    fi
+
+    conda deactivate
+done
+
+echo
+echo "✅ Jupyter kernel re-registration complete."
 echo
 echo "Move completed at $(date)"
 echo
@@ -64,5 +95,4 @@ echo "The original miniconda3 directory has been preserved at:"
 echo "  $STAGING"
 echo
 echo "If everything looks good, you can now delete it with:"
-echo "  srun --account=iit130 --partition=shared --nodes=1 --ntasks=1 --cpus-per-task=1 \
-     --mem=1G --time=01:00:00 rm -rf ~/miniconda3.staging"
+echo "  sbatch --account=iit130 --partition=shared --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=1G --time=01:00:00 --job-name=cleanup_miniconda --output=cleanup_miniconda.%j.out --wrap='rm -rf \$HOME/miniconda3.staging'"
