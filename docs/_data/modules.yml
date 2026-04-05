@@ -161,10 +161,10 @@
 
 - day: M
   date: 04/06
-  title: "Statistical analysis of molecular simulations."
-  description: "Estimating expectation values. Contact analysis. Dimensionality reduction. Clustering."
-  exercise: "11: Statistical analysis of molecular simulations"
-  notebook_todo: 11-Analysis
+  title: "Exploratory data analysis of molecular simulations."
+  description: "Fluctuation analysis. Dimensionality reduction. Clustering. Contact analysis."
+  exercise: "11: Analyzing molecular dynamics simulations"
+  notebook: 11-MD_Analysis
   due: "Exercise 9"
 
 - day: W
@@ -173,11 +173,9 @@
   description: "Thermodynamic cycles. Alchemical methods. End-point methods. Implicit
     ligand theory."
   slides: 0408-Free_Energy_Calculations
-  due: "Exercise 10"
 
 - day: M
   date: 04/13
-  due: "Exercise 11"
   exercise: "12: Free energy calculations with AlGDock"
   notebook_todo: 12-AlGDock
 
@@ -186,7 +184,7 @@
   title: "Quantitative structure-property relationships."
   description: "Structural features. Common properties. Machine learning methods."
   slides_todo: 04-15-QSPR
-  due: "Quiz: Molecular simulations"
+  due: "Exercise 10 and 11. Quiz: Molecular simulations"
 
 - day: M
   date: 04/20
