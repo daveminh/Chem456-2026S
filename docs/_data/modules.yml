@@ -176,14 +176,14 @@
 
 - day: M
   date: 04/13
-  exercise: "12: Free energy calculations with AlGDock"
-  notebook_todo: 12-AlGDock
+  exercise: "12: End-point binding free energy calculations"
+  notebook: 12-End-Point_BFE
 
 - day: W
   date: 04/15
   title: "Quantitative structure-property relationships."
   description: "Structural features. Common properties. Machine learning methods."
-  slides_todo: 04-15-QSPR
+  slides: 04-15-QSPR
   due: "Exercise 10 and 11. Quiz: Molecular simulations"
 
 - day: M
