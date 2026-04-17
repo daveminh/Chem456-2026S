@@ -184,7 +184,6 @@
   title: "Quantitative structure-property relationships."
   description: "Structural features. Common properties. Machine learning methods."
   slides: 0415-QSPR
-  due: "Exercise 10 and 11. Quiz: Molecular simulations"
 
 - day: M
   date: 04/20
@@ -192,20 +191,20 @@
   exercise: "13: Machine learning prediction of solubility"
   slides: 0420-Solubility
   notebook: 13-QSPR_Solubility
-  due: "Exercise 12"
 
 - day: W
   date: 04/22
   title: "Quantum mechanics/molecular mechanics (QM/MM)"
-  slides_todo: 04-22-QMMM
+  slides: 0422-QMMM
+  due: "Exercise 10 and 11. Quiz: Molecular simulations"
 
 - day: M
   date: 04/27
   exercise: "14: QM/MM analysis of SARS-CoV-2 MPro catalysis"
-  notebook_todo: 04-QMMM
-  due: "Exercise 13"
+  notebook_todo: 14-QMMM
+  due: "Exercise 12"
 
 - day: W
   date: 04/29
   title: "Catch up on exercises / work on projects."
-  due: "Final presentation draft (optional)"
+  due: "Exercise 13. Final presentation draft (optional)"
