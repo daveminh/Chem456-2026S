@@ -201,7 +201,7 @@
 - day: M
   date: 04/27
   exercise: "14: QM/MM analysis of SARS-CoV-2 MPro catalysis"
-  notebook_todo: 14-QMMM
+  notebook: 14-QMMM
   due: "Exercise 12"
 
 - day: W
